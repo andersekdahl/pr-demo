@@ -120,6 +120,7 @@ var TodoApp = React.createClass({
 		if (todos.length) {
 			main = (
 				<section className="main">
+					<button>Click me</button>
 					<input
 						className="toggle-all"
 						type="checkbox"
