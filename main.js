@@ -130,6 +130,7 @@ var TodoApp = React.createClass({
 					<ul className="todo-list">
 						{todoItems}
 					</ul>
+					<div>You can now click the button</div>
 				</section>
 			);
 		}
