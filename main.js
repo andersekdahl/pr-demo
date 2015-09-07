@@ -107,16 +107,6 @@ var TodoApp = React.createClass({
 
 		var completedCount = todos.length - activeTodoCount;
 
-		if (activeTodoCount || completedCount) {
-			footer =
-				<TodoFooter
-					count={activeTodoCount}
-					completedCount={completedCount}
-					nowShowing={this.state.nowShowing}
-					onClearCompleted={this.clearCompleted}
-				/>;
-		}
-
 		if (todos.length) {
 			main = (
 				<section className="main">
@@ -133,6 +123,16 @@ var TodoApp = React.createClass({
 					<div>You can now click the button</div>
 				</section>
 			);
+		}
+
+		if (activeTodoCount || completedCount) {
+			footer =
+				<TodoFooter
+					count={activeTodoCount}
+					completedCount={completedCount}
+					nowShowing={this.state.nowShowing}
+					onClearCompleted={this.clearCompleted}
+				/>;
 		}
 
 		return (
